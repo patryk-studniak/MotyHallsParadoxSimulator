@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html  lang="pl" id="ie8"><![endif]-->
+<!--[if IE 9]><html  lang="pl" id="ie9"><![endif]-->
+<!--[if !IE]><!--><html  lang="pl"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Monty Hall's paradox simulator</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="common.css"><!-- /end Styles -->
+    <!-- Latest compiled and minified CSS -->
+	<script type="text/javascript" src="simulator_script.js"></script>
+
+	<!--[if lte IE 8]>
+	<script type="text/javascript">
+		(function() {
+			var html5elements = "address|article|aside|audio|canvas|command|datalist|details|dialog|figure|figcaption|footer|header|hgroup|keygen|main|mark|meter|menu|nav|progress|ruby|section|time|video".split('|');
+			for(var i = 0; i < html5elements.length; i++) {
+				document.createElement(html5elements[i]);
+			}
+		})();
+	</script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <h3 class="header__title">Monty Hall's paradox simulator</h3>
+    </header>
+
+    <section class="container">
+		<main>
+			<content>
+				<div class="container__left-content">
+					<p class="paragraph__left">
+						Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?
+					</p>
+				</div>
+				<div class="container__right-content">
+					<p class="paragraph__right">Simulations number for both cases:</p>
+
+					<div class="container__right-content--input-data-container">
+						<input type="text" id="simulations-number">
+						<button id="run">Run Simulations</button>
+						<button id="reset">Reset Simulations</button>
+					</div>
+
+					<div class="container__right-content--display-data-container">
+						<div class="container__right-content--random-values">
+							<p class="random__value-description">Random choice result: <strong class="random__value">0%</strong></p>
+							<div class="random__value--bar">
+								<div class="random__value--bar-colored"></div>
+							</div>
+						</div>
+
+						<div class="container__right-content--same-values">
+							<p class="same__value-description">Same choice result: <strong class="same__value">0%</strong></p>
+							<div class="same__value--bar">
+								<div class="same__value--bar-colored"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</content>
+		</main>
+    </section>
+
+	<footer class="footer">
+		<p class="paragraph__footer">
+			copyright: Patryk Studniak
+		</p>
+	</footer>
+</body>
+
+</html>
